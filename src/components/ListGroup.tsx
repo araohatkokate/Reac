@@ -1,5 +1,22 @@
+import { Fragment } from "react";
+
 function ListGroup() {
-    return <h1>List Group</h1>;
+    const items = [
+        'New York',
+        'California',
+        'Texas'
+    ];
+
+    
+
+    return (
+        <Fragment>
+            <h1>List</h1>
+            <ul className="list-group">
+            {items.map(item => <li>{item}</li>)}
+            </ul>
+        </Fragment>
+    );
 }
 
 export default ListGroup;
